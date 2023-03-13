@@ -1,6 +1,7 @@
 
 
 ### ahaooahaz
+
 </br>
 <a align="right"  href="https://github.com/AHAOAHA/">
   <img align="right"   src="https://github-readme-stats.vercel.app/api/top-langs/?username=AHAOAHA&exclude_repo=AHAOAHA,ahaoaha.github.io,CurriculumVitae)&langs_count=6" />
@@ -12,7 +13,7 @@
 </a>
 </p>  
 
-<p align="center"> Visitor count<br> <img src="https://profile-counter.glitch.me/AHAOAHA/count.svg" /></p>
+<p align="center">🌊 Visitor count<br> <img src="https://profile-counter.glitch.me/AHAOAHA/count.svg" /></p>
 
 
 [![GitHub](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&labelColor=282c34&style=flat-square&color=181717&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DAHAOAHA&longCache=true)](https://github.com/AHAOAHA)&nbsp;
