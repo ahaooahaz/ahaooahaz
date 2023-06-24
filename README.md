@@ -18,4 +18,4 @@
 
 [![GitHub](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&labelColor=282c34&style=flat-square&color=181717&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dahaooahaz&longCache=true)](https://github.com/ahaooahaz)&nbsp;
 [![Telegram](https://img.shields.io/badge/-t.me/ahaooahaz-3db6f1?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/ahaooahaz)&nbsp;
-[![Email](https://img.shields.io/badge/-ahaoaha_@outlook.com-911318?style=flat-square&logo=Mail.RU&logoColor=white&labelColor=c14438)](mailto:ahaoaha_@outlook.com)
+[![Email](https://img.shields.io/badge/-ahaooahaz@outlook.com-911318?style=flat-square&logo=Mail.RU&logoColor=white&labelColor=c14438)](mailto:ahaooahaz@outlook.com)
