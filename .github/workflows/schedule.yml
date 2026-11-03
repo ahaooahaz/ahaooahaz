@@ -4,13 +4,25 @@ on:
     - cron: "0 0 * * *"
   # Manual triggers with workflow_dispatch
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Check out waka-box
+        uses: actions/checkout@v6
+        with:
+          repository: matchai/waka-box
+          # Run the bundled script directly to avoid the action's legacy Node runtime.
+          ref: d1b17b7ba36f75f15986f7f4ec0c71b1e971f48c
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
       - name: Update gist
-        uses: matchai/waka-box@master
+        run: node dist/index.js
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
