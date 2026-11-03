@@ -10,20 +10,19 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out waka-box
+      - name: Check out repository
         uses: actions/checkout@v6
         with:
-          repository: matchai/waka-box
-          # Run the bundled script directly to avoid the action's legacy Node runtime.
-          ref: d1b17b7ba36f75f15986f7f4ec0c71b1e971f48c
           persist-credentials: false
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version: "24"
       - name: Update gist
-        run: node dist/index.js
+        run: node .github/scripts/update-wakatime-gist.mjs
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # Create an OAuth token with read_stats at https://wakatime.com/oauth.
+          # Plugin API keys can no longer read stats.
+          WAKATIME_ACCESS_TOKEN: ${{ secrets.WAKATIME_ACCESS_TOKEN }}
